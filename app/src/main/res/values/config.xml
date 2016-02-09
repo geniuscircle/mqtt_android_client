@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_config_server_address">broker.hivemq.com</string>
+    <string name="txt_config_server_port">1883</string>
+</resources>

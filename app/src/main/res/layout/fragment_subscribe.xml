@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/topicSubViewGroup">
+
+    <TextView
+        android:id="@+id/txt_subscribe_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dip"
+        android:text="@string/etxt_subscribe_topic" />
+
+    <EditText
+        android:id="@+id/etxt_subscribe_topic"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:layout_width="0dip"
+        android:ems="10"
+        android:text="@string/txt_subscribe_sample"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/container_subscribe_qos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/topicSubViewGroup"
+    android:layout_marginTop="25dp" >
+
+        <TextView
+        android:id="@+id/txt_subscribe_qos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/qos" />
+
+    <RadioGroup
+        android:id="@+id/rg_subscribe_qos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+        <RadioButton
+            android:id="@+id/rb_subscribe_qos_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rb_publish_qos_0"
+             />
+
+        <RadioButton
+            android:id="@+id/rb_subscribe_qos_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_publish_qos_1" />
+
+        <RadioButton
+            android:id="@+id/rb_subscribe_qos_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_publish_qos_2" />
+    </RadioGroup>
+    
+</LinearLayout>
+</RelativeLayout>

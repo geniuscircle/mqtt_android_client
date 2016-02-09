@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/container_publish_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_publish_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dip"
+            android:text="@string/etxt_subscribe_topic" />
+
+        <EditText
+            android:id="@+id/etxt_publish_topic"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/txt_subscribe_sample" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_publish_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_publish_topic"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/txt_publish_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:text="@string/message" />
+
+        <EditText
+            android:id="@+id/etxt_publish_message"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22"
+            android:ems="10"
+            android:hint="@string/messageHint"
+            android:inputType="textMultiLine"
+            android:text="@string/txt_subscribe_publish" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_publish_qos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_publish_message"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/txt_publish_qos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/qos" />
+
+        <RadioGroup
+            android:id="@+id/rg_publish_qos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_publish_qos_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rb_publish_qos_0" />
+
+            <RadioButton
+                android:id="@+id/rb_publish_qos_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_publish_qos_1" />
+
+            <RadioButton
+                android:id="@+id/rb_publish_qos_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_publish_qos_2" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_publish_retain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_publish_qos"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/txt_publish_retain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/cb_publish_retain" />
+
+        <CheckBox
+            android:id="@+id/cb_publish_retain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty" />
+    </LinearLayout>
+</RelativeLayout>
